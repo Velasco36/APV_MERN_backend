@@ -28,9 +28,9 @@ app.use('/api/veterinario',  veterinarioRouter)
 app.use('/api/pacientes',  pacienteRoutes);
 
 
-const PORT = process.env.port || 4000;
+const PORT = process.env.PORT || 4000;
 
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
     console.log(`Servidor  funcionando correctamente en el puerto ${PORT}`)
 })
